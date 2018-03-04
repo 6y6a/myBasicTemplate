@@ -1,0 +1,67 @@
+@import '../../scss/basic/variables';
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  background: #7986CB;
+  color: #fff;
+  vertical-align: middle;
+  white-space: nowrap;
+  user-select: none;
+  font-weight: 400;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: darken(#7986CB, 7.5%);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:active {
+    background: darken(#7986CB, 12%);
+  }
+
+  &:disabled {
+    background-color: #7986CB;
+    opacity: 0.65;
+    cursor: auto;
+  }
+
+  &--outline {
+    color: #7986CB;
+    background-color: transparent;
+    border-color: #7986CB;
+
+    &:hover {
+      color: #fff;
+      background-color: #7986CB;
+    }
+
+    &:active {
+      background: darken(#7986CB, 12%);
+    }
+
+    &:disabled {
+      color: #7986CB;
+      background-color: transparent;
+    }
+  }
+
+  &--small {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+
+  &--big {
+    padding: 8px 16px;
+    font-size: 20px;
+  }
+}
